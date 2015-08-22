@@ -1,0 +1,9 @@
+/* Empty. Add your own CSS if you like */
+/* homescreen background image */
+.background.scroll-content {
+    background: url("../img/mybackground.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    z-index: 2;
+    }
