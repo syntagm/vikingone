@@ -1,9 +1,31 @@
 /* Empty. Add your own CSS if you like */
 /* homescreen background image */
 .background.scroll-content {
-    background: url("../img/mybackground.png") no-repeat;
+    background: url("apricot.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     margin: auto;
     z-index: 2;
     }
+
+    .card-red .item{
+          background: white;
+          opacity: 0.70;
+          filter: alpha(opacity=70); /* For IE8 and earlier */
+          font-size: 1.5em;
+          text-align: center;
+          margin: auto;
+          width: 80%;
+          border-radius: 10px;
+        }
+
+    .card-dark .item{
+          background: white;
+          opacity: 0.80;
+          filter: alpha(opacity=80); /* For IE8 and earlier */
+          font-size: 1.5em;
+          text-align: center;
+          margin: auto;
+          width: 80%;
+          border-radius: 10px;
+        }
