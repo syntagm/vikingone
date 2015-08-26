@@ -5,25 +5,51 @@
       <button class="button button-clear" ng-click="closeLogin()">Close</button>
     </div>
   </ion-header-bar>
-  <ion-content>
-    <div class="app">
-          <br><br><br><br><br>
-            <h1>Viking pushApp</h1>
-            <br>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to PUSH</p>
-                <p class="event received">Ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
+  <ion-content class="background2" scroll="true">
+     <div data-ng-controller="ExampleController">
+            <div class="card-red">
+              <div class="item card-red item-text-wrap">
+              <h1>Login or SignUp</h1>
+              <H2>You only have to sign up the first time</H2>
+              <p>If logged in your name will show up under the logout button</p>
+              <h3></h3>
 
-        <script type="text/javascript" src="js/PushwooshAndroid.js"></script>
-        <script type="text/javascript" src="js/PushwooshiOS.js"></script>
-        <script type="text/javascript" src="js/PushwooshWP.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+            <div><button-clear id="logout">Log out before leaving</button></div>
 
-        <script type="text/javascript">
-            app.initialize();
-        </script>
+            <div id="current-user"></div><br />
+
+            <form id="login">
+              <label class="item item-input item-light">
+                <span class="input-label">UserName</span>
+                <input id="login-name" type="text">
+              </label><br>
+              <label class="item item-input item-calm">
+                <span class="input-label">Password</span>
+                <input id="login-password" type="password">
+              </label><br>
+              <button class="button button-dark">
+              <input id="login-submit" type="submit">
+              </button>
+            </form>
+            <br />
+
+            <div id="current-user"></div>
+          <form id="signup">
+            <label class="item item-input item-balanced">
+              <span class="input-label">Choose User Name</span>
+              <input id="signup-name" type="text">
+            </label><br>
+            <label class="item item-input item-balanced">
+              <span class="input-label">Choose Password</span>
+              <input id="signup-password" type="password">
+            </label><br>
+            <button class="button button-balanced">
+              <input id="signup-submit" type="submit">
+            </button>
+          </form>
+          
+          </div>
+          </div>
+     </div>
   </ion-content>
 </ion-modal-view>

@@ -6,7 +6,7 @@
         id        = "za.co.syntagm.vikingone"
         version   = "1.0.0">
 
-    <name>agriPush</name>
+    <name>VikingPush</name>
 
     <description>
         Push notifications for Viking
